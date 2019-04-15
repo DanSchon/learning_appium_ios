@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="48742" started-at="2019-04-15T21:06:31Z" finished-at="2019-04-15T21:07:20Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="48742" started-at="2019-04-15T21:06:31Z" finished-at="2019-04-15T21:07:20Z">
+      <class name="appium.appiumpractice.Test1">
+        <test-method status="PASS" signature="VerifyAppLaunches()[pri:0, instance:appium.appiumpractice.Test1@6fb554cc]" name="VerifyAppLaunches" duration-ms="48720" started-at="2019-04-15T21:06:31Z" finished-at="2019-04-15T21:07:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyAppLaunches -->
+      </class> <!-- appium.appiumpractice.Test1 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
