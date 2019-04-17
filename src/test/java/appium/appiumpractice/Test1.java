@@ -8,9 +8,12 @@ import org.testng.annotations.Test;
 public class Test1 extends TestBase {
 
 	@Test
-	public void VerifyAppLaunches() throws MalformedURLException {
+	public void SubmitText() throws MalformedURLException, InterruptedException {
 		setUp();
-		System.out.println("App is open on simulator");
+		driver.findElementById("Alert Views").click(); // use 'findElementById' for 'accessibilityId' locators
+		driver.findElementByXPath("//XCUIElementTypeStaticText[@name=\"Text Entry\"]").click();
+		driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("hello"); // use 'findElementByClassName' for 'type' locators
+		driver.findElementByName("OK").click();
 		tearDown();
 	}
 	

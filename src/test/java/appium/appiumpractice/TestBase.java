@@ -2,6 +2,7 @@ package appium.appiumpractice;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.remote.DesiredCapabilities;
 
@@ -23,6 +24,7 @@ public class TestBase {
 			d.setCapability(MobileCapabilityType.AUTOMATION_NAME, AutomationName.IOS_XCUI_TEST);
 			d.setCapability(MobileCapabilityType.APP, "/Users/danielschonfeld/Desktop/UICatalog.app");
 			driver = new IOSDriver<IOSElement>(new URL("http://127.0.0.1:4723/wd/hub"), d);
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		}
 		
 		public void tearDown() {

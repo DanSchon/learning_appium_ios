@@ -2,15 +2,15 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="48742" started-at="2019-04-15T21:06:31Z" finished-at="2019-04-15T21:07:20Z">
+  <suite name="Suite" duration-ms="13347" started-at="2019-04-17T01:07:25Z" finished-at="2019-04-17T01:07:38Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="48742" started-at="2019-04-15T21:06:31Z" finished-at="2019-04-15T21:07:20Z">
+    <test name="Test" duration-ms="13347" started-at="2019-04-17T01:07:25Z" finished-at="2019-04-17T01:07:38Z">
       <class name="appium.appiumpractice.Test1">
-        <test-method status="PASS" signature="VerifyAppLaunches()[pri:0, instance:appium.appiumpractice.Test1@6fb554cc]" name="VerifyAppLaunches" duration-ms="48720" started-at="2019-04-15T21:06:31Z" finished-at="2019-04-15T21:07:20Z">
+        <test-method status="PASS" signature="SubmitText()[pri:0, instance:appium.appiumpractice.Test1@6fb554cc]" name="SubmitText" duration-ms="13326" started-at="2019-04-17T01:07:25Z" finished-at="2019-04-17T01:07:38Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyAppLaunches -->
+        </test-method> <!-- SubmitText -->
       </class> <!-- appium.appiumpractice.Test1 -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
