@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="15927" started-at="2019-04-17T19:24:58Z" finished-at="2019-04-17T19:25:14Z">
+  <suite name="Suite" duration-ms="15137" started-at="2019-05-02T15:39:56Z" finished-at="2019-05-02T15:40:11Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="15927" started-at="2019-04-17T19:24:58Z" finished-at="2019-04-17T19:25:14Z">
-      <class name="appium.appiumpractice.Test1">
-        <test-method status="PASS" signature="TapOnTwoTabsThenSubmitTextAndNavigateBackToHomePage()[pri:0, instance:appium.appiumpractice.Test1@6fb554cc]" name="TapOnTwoTabsThenSubmitTextAndNavigateBackToHomePage" duration-ms="15902" started-at="2019-04-17T19:24:58Z" finished-at="2019-04-17T19:25:14Z">
+    <test name="Test" duration-ms="15137" started-at="2019-05-02T15:39:56Z" finished-at="2019-05-02T15:40:11Z">
+      <class name="appium.appiumpractice.nativeIOs.Test1">
+        <test-method status="PASS" signature="TapOnTwoTabsThenSubmitTextAndNavigateBackToHomePage()[pri:0, instance:appium.appiumpractice.nativeIOs.Test1@6fb554cc]" name="TapOnTwoTabsThenSubmitTextAndNavigateBackToHomePage" duration-ms="15116" started-at="2019-05-02T15:39:56Z" finished-at="2019-05-02T15:40:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TapOnTwoTabsThenSubmitTextAndNavigateBackToHomePage -->
-      </class> <!-- appium.appiumpractice.Test1 -->
+      </class> <!-- appium.appiumpractice.nativeIOs.Test1 -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -1,4 +1,4 @@
-package appium.appiumpractice;
+package appium.appiumpractice.nativeIOs;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -11,7 +11,7 @@ import io.appium.java_client.ios.IOSElement;
 import io.appium.java_client.remote.AutomationName;
 import io.appium.java_client.remote.MobileCapabilityType;
 
-public class TestBase {
+public class TestBaseNativeIOs {
 	
 		public IOSDriver<IOSElement> driver;
 

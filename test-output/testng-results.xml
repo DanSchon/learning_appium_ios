@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="11370" started-at="2019-04-17T00:55:59Z" finished-at="2019-04-17T00:56:10Z">
+  <suite name="Suite" duration-ms="43160" started-at="2019-05-02T15:44:27Z" finished-at="2019-05-02T15:45:11Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="11370" started-at="2019-04-17T00:55:59Z" finished-at="2019-04-17T00:56:10Z">
-      <class name="appium.appiumpractice.Test1">
-        <test-method status="PASS" signature="SubmitText()[pri:0, instance:appium.appiumpractice.Test1@3bfdc050]" name="SubmitText" duration-ms="11343" started-at="2019-04-17T00:55:59Z" finished-at="2019-04-17T00:56:10Z">
+    <test name="Test" duration-ms="43160" started-at="2019-05-02T15:44:27Z" finished-at="2019-05-02T15:45:11Z">
+      <class name="appium.appiumpractice.safariBrowserOnIOs.Test1">
+        <test-method status="PASS" signature="test()[pri:0, instance:appium.appiumpractice.safariBrowserOnIOs.Test1@3bfdc050]" name="test" duration-ms="43139" started-at="2019-05-02T15:44:27Z" finished-at="2019-05-02T15:45:11Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SubmitText -->
-      </class> <!-- appium.appiumpractice.Test1 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- test -->
+      </class> <!-- appium.appiumpractice.safariBrowserOnIOs.Test1 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

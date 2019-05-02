@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="appium.appiumpractice.Test1"/>
+      <class name="appium.appiumpractice.nativeIOs.Test1"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -1,10 +1,11 @@
-package appium.appiumpractice;
+package appium.appiumpractice.nativeIOs;
 
 import org.testng.annotations.Test;
+
 import java.net.MalformedURLException;
 
 
-public class Test1 extends TestBase {
+public class Test1 extends TestBaseNativeIOs {
 
 	@Test
 	public void TapOnTwoTabsThenSubmitTextAndNavigateBackToHomePage() throws MalformedURLException, InterruptedException {
