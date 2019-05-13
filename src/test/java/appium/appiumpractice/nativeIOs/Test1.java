@@ -8,9 +8,8 @@ import java.net.MalformedURLException;
 public class Test1 extends TestBaseNativeIOs {
 
 	@Test
-	public void TapOnTwoTabsThenSubmitTextAndNavigateBackToHomePage() throws MalformedURLException, InterruptedException {
-		setUp();
-		
+	public void TapOnTwoTabsThenSubmitTextAndNavigateBackToHomePage() throws MalformedURLException, InterruptedException {		
+		super.setUp();
 		System.out.println("tap on 'Alert Views'");
 		driver.findElementById("Alert Views").click(); // use 'findElementById' for 'accessibilityId' locators
 		
@@ -26,7 +25,7 @@ public class Test1 extends TestBaseNativeIOs {
 		System.out.println("go back to home page");
 		driver.navigate().back();
 		
-		tearDown();
+		super.tearDown();
 	}
 	
 }
