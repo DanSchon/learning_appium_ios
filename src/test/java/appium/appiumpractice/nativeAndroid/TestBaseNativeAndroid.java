@@ -32,8 +32,8 @@ public class TestBaseNativeAndroid {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 	
-	@Test
-	public void launch() throws MalformedURLException, InterruptedException {
-		this.setUp();
+	public void tearDown() {
+		driver.quit(); // closes the app, not the emulator
 	}
+	
 }
