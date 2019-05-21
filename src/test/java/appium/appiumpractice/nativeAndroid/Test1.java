@@ -4,10 +4,16 @@ import java.net.MalformedURLException;
 
 import org.testng.annotations.Test;
 
+import io.appium.java_client.TouchAction;
+import static io.appium.java_client.touch.TapOptions.tapOptions;
+import static io.appium.java_client.touch.LongPressOptions.longPressOptions;
+import static io.appium.java_client.touch.offset.ElementOption.element;
+import static java.time.Duration.ofSeconds;
+
 public class Test1 extends TestBaseNativeAndroid {
 
 	@Test
-	public void testUsingXpath() throws MalformedURLException, InterruptedException {
+	public void testUsingXpathAndTextAttributes() throws MalformedURLException, InterruptedException {
 		/*
 		 * xpath syntax = "//tagname[@attribute='value']"
 		 * 
@@ -39,6 +45,102 @@ public class Test1 extends TestBaseNativeAndroid {
 		
 		System.out.println("3. on the next page, click on the 'Wifi' checkbox");
 		this.driver.findElementById("android:id/checkbox").click();
+
+		this.tearDown();
+	}
+	
+	@Test
+	public void testUsingXpathWithIndexes() throws MalformedURLException, InterruptedException {
+		/*
+		 * xpath syntax with indexing = driver.findElement("(//tagname)[2]")) - note: not zero indexed unlike arrays/lists
+		 * 
+		 * if two elements can't be differentiated by a unique attribute, use the shared 'class' name as the tagname in the xpath and select the one you want via indexing 
+		 */
+		
+		this.setUp();
+		System.out.println("1. click on 'Preference' tab");
+		this.driver.findElementByXPath("//android.widget.TextView[@text='Preference']").click();
+		System.out.println("2. on the next page, click on '3. Preference dependencies' tab");
+		this.driver.findElementByXPath("//android.widget.TextView[@text='3. Preference dependencies']").click();
+		System.out.println("3. on the next page, click on the 'Wifi' checkbox");
+		this.driver.findElementById("android:id/checkbox").click();
+		
+		System.out.println("4. click on the 'Wifi settings' tab");
+		this.driver.findElementByXPath("(//android.widget.RelativeLayout)[2]").click();
+		
+		this.tearDown();
+	}
+	
+	@Test
+	public void testUsingClassNameAndSendKeys() throws MalformedURLException, InterruptedException {
+		/*
+		 * use findElementByClassName for 'class' attribute
+		 * use .sendKeys("") to enter text into text field
+		 */
+		
+		this.setUp();
+		System.out.println("1. click on 'Preference' tab");
+		this.driver.findElementByXPath("//android.widget.TextView[@text='Preference']").click();
+		System.out.println("2. on the next page, click on '3. Preference dependencies' tab");
+		this.driver.findElementByXPath("//android.widget.TextView[@text='3. Preference dependencies']").click();
+		System.out.println("3. on the next page, click on the 'Wifi' checkbox");
+		this.driver.findElementById("android:id/checkbox").click();
+		System.out.println("4. click on the 'Wifi settings' tab");
+		this.driver.findElementByXPath("(//android.widget.RelativeLayout)[2]").click();
+		
+		System.out.println("5. on the popup dialog that appears, enter 'Starbucks' to text field");
+		this.driver.findElementByClassName("android.widget.EditText").sendKeys("Starbucks");
+		this.tearDown();
+	}
+	
+	@Test
+	public void testUsingAndroidUIAutomator() throws MalformedURLException, InterruptedException {
+		/*
+		 * syntax: driver.findElementByAndroidUIAutomator("attribute(\"value\")");
+		 */
+		this.setUp();
+		
+		System.out.println("1. click on 'Views' tab");
+		driver.findElementByAndroidUIAutomator("text(\"Views\")").click();
+		
+		this.tearDown();
+	}
+	
+	@Test
+	public void testUsingTappingTouchActions() throws MalformedURLException, InterruptedException {
+		/*
+		 * tap an element
+		 */
+		this.setUp();
+		System.out.println("1. click on 'Views' tab");
+		driver.findElementByAndroidUIAutomator("text(\"Views\")").click();
+		System.out.println("2. click on 'Expandable Lists' tab");
+		driver.findElementByAndroidUIAutomator("text(\"Expandable Lists\")").click();
+		driver.findElementByAndroidUIAutomator("text(\"1. Custom Adapter\")").click();
+		
+		System.out.println("3. Tap on 'people names' tab to expand list");
+		TouchAction t = new TouchAction(driver);
+		t.tap(tapOptions().withElement(element(driver.findElementByAndroidUIAutomator("text(\"People Names\")")))).perform();
+		
+		this.tearDown();
+	}
+	
+	@Test
+	public void testUsingLongPressTouchActions() throws MalformedURLException, InterruptedException {
+		/*
+		 * long press the same element as the previous test for a different result
+		 */
+		this.setUp();
+		this.setUp();
+		System.out.println("1. click on 'Views' tab");
+		driver.findElementByAndroidUIAutomator("text(\"Views\")").click();
+		System.out.println("2. click on 'Expandable Lists' tab");
+		driver.findElementByAndroidUIAutomator("text(\"Expandable Lists\")").click();
+		driver.findElementByAndroidUIAutomator("text(\"1. Custom Adapter\")").click();
+		
+		System.out.println("3. Long Press on 'people names' tab to display popup");
+		TouchAction t = new TouchAction(driver);
+		t.longPress(longPressOptions().withElement(element(driver.findElementByAndroidUIAutomator("text(\"People Names\")"))).withDuration(ofSeconds(2))).release().perform();
 		
 		this.tearDown();
 	}

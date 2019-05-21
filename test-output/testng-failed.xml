@@ -5,7 +5,7 @@
     <classes>
       <class name="appium.appiumpractice.nativeAndroid.Test1">
         <methods>
-          <include name="testUsingXpath"/>
+          <include name="testUsingTappingTouchActions"/>
         </methods>
       </class> <!-- appium.appiumpractice.nativeAndroid.Test1 -->
     </classes>
