@@ -1,24 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="9" passed="9">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="35707" started-at="2019-05-21T16:02:33Z" finished-at="2019-05-21T16:03:09Z">
+  <suite name="Suite" duration-ms="99421" started-at="2019-05-22T16:20:55Z" finished-at="2019-05-22T16:22:35Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="35707" started-at="2019-05-21T16:02:33Z" finished-at="2019-05-21T16:03:09Z">
+    <test name="Test" duration-ms="99421" started-at="2019-05-22T16:20:55Z" finished-at="2019-05-22T16:22:35Z">
       <class name="appium.appiumpractice.nativeAndroid.Test1">
-        <test-method status="PASS" signature="testSwiping()[pri:0, instance:appium.appiumpractice.nativeAndroid.Test1@4883b407]" name="testSwiping" duration-ms="13519" started-at="2019-05-21T16:02:34Z" finished-at="2019-05-21T16:02:47Z">
+        <test-method status="PASS" signature="testScrollingDownUntilAnElementIsVisible()[pri:0, instance:appium.appiumpractice.nativeAndroid.Test1@7d9d1a19]" name="testScrollingDownUntilAnElementIsVisible" duration-ms="15060" started-at="2019-05-22T16:20:55Z" finished-at="2019-05-22T16:21:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testScrollingDownUntilAnElementIsVisible -->
+        <test-method status="PASS" signature="testSwiping()[pri:0, instance:appium.appiumpractice.nativeAndroid.Test1@7d9d1a19]" name="testSwiping" duration-ms="12016" started-at="2019-05-22T16:21:10Z" finished-at="2019-05-22T16:21:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSwiping -->
-        <test-method status="PASS" signature="testUsingLongPressTouchActions()[pri:0, instance:appium.appiumpractice.nativeAndroid.Test1@4883b407]" name="testUsingLongPressTouchActions" duration-ms="11746" started-at="2019-05-21T16:02:47Z" finished-at="2019-05-21T16:02:59Z">
+        <test-method status="PASS" signature="testUsingAndroidUIAutomator()[pri:0, instance:appium.appiumpractice.nativeAndroid.Test1@7d9d1a19]" name="testUsingAndroidUIAutomator" duration-ms="5939" started-at="2019-05-22T16:21:22Z" finished-at="2019-05-22T16:21:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUsingAndroidUIAutomator -->
+        <test-method status="PASS" signature="testUsingClassNameAndSendKeys()[pri:0, instance:appium.appiumpractice.nativeAndroid.Test1@7d9d1a19]" name="testUsingClassNameAndSendKeys" duration-ms="14917" started-at="2019-05-22T16:21:28Z" finished-at="2019-05-22T16:21:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUsingClassNameAndSendKeys -->
+        <test-method status="PASS" signature="testUsingId()[pri:0, instance:appium.appiumpractice.nativeAndroid.Test1@7d9d1a19]" name="testUsingId" duration-ms="9764" started-at="2019-05-22T16:21:43Z" finished-at="2019-05-22T16:21:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUsingId -->
+        <test-method status="PASS" signature="testUsingLongPressTouchActions()[pri:0, instance:appium.appiumpractice.nativeAndroid.Test1@7d9d1a19]" name="testUsingLongPressTouchActions" duration-ms="12239" started-at="2019-05-22T16:21:53Z" finished-at="2019-05-22T16:22:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUsingLongPressTouchActions -->
-        <test-method status="PASS" signature="testUsingTappingTouchActions()[pri:0, instance:appium.appiumpractice.nativeAndroid.Test1@4883b407]" name="testUsingTappingTouchActions" duration-ms="10417" started-at="2019-05-21T16:02:59Z" finished-at="2019-05-21T16:03:09Z">
+        <test-method status="PASS" signature="testUsingTappingTouchActions()[pri:0, instance:appium.appiumpractice.nativeAndroid.Test1@7d9d1a19]" name="testUsingTappingTouchActions" duration-ms="10051" started-at="2019-05-22T16:22:05Z" finished-at="2019-05-22T16:22:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUsingTappingTouchActions -->
+        <test-method status="PASS" signature="testUsingXpathAndTextAttributes()[pri:0, instance:appium.appiumpractice.nativeAndroid.Test1@7d9d1a19]" name="testUsingXpathAndTextAttributes" duration-ms="9301" started-at="2019-05-22T16:22:15Z" finished-at="2019-05-22T16:22:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUsingXpathAndTextAttributes -->
+        <test-method status="PASS" signature="testUsingXpathWithIndexes()[pri:0, instance:appium.appiumpractice.nativeAndroid.Test1@7d9d1a19]" name="testUsingXpathWithIndexes" duration-ms="10102" started-at="2019-05-22T16:22:25Z" finished-at="2019-05-22T16:22:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUsingXpathWithIndexes -->
       </class> <!-- appium.appiumpractice.nativeAndroid.Test1 -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
