@@ -2,6 +2,7 @@ package appium.appiumpractice.nativeAndroid;
 
 import java.net.MalformedURLException;
 
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 import io.appium.java_client.TouchAction;
@@ -172,6 +173,34 @@ public class Test1 extends TestBaseNativeAndroid {
 				.withElement(element(driver.findElementByXPath("//*[@content-desc='15']")))
 				.withDuration(ofSeconds(2)))
 				.moveTo(element(driver.findElementByXPath("//*[@content-desc='45']")))
+				.release()
+				.perform();
+		
+		this.tearDown();
+	}
+	
+	@Test
+	public void testDragAndDrop() throws MalformedURLException, InterruptedException {
+		/*
+		 * practice drag and dropping an element from its source location (itself) to a destination (another element)
+		 * 
+		 * drag and dropping involves the following 3 actions:
+		 * 1. long press on first element (note: no need to hold for a certain duration)
+		 * 2. move to second element (where you are dragging element to)
+		 * 3. release
+		 */
+		this.setUp();
+		driver.findElementByAndroidUIAutomator("text(\"Views\")").click();
+		driver.findElementByAndroidUIAutomator("text(\"Drag and Drop\")").click();
+		
+		WebElement source = driver.findElementsByClassName("android.view.View").get(0);
+		WebElement destination = driver.findElementsByClassName("android.view.View").get(1);
+		
+		System.out.println("drag and drop an element");
+		TouchAction t = new TouchAction(driver);
+		t.longPress(longPressOptions()
+				.withElement(element(source)))
+				.moveTo(element(destination))
 				.release()
 				.perform();
 		
