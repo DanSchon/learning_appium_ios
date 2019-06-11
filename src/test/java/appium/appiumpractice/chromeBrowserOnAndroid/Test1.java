@@ -1,4 +1,4 @@
-package appium.appiumpractice.safariBrowserOnIOs;
+package appium.appiumpractice.chromeBrowserOnAndroid;
 
 import java.net.MalformedURLException;
 
@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 
-public class Test1 extends TestBaseSafari {
+public class Test1 extends TestBaseWebAndroid {
 
 	@Test
 	public void test() throws InterruptedException, MalformedURLException {
