@@ -3,13 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="appium.appiumpractice.chromeBrowserOnAndroid.Test1">
+      <class name="appium.appiumpractice.hybridAppAndroid.Test1">
         <methods>
           <include name="test"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
         </methods>
-      </class> <!-- appium.appiumpractice.chromeBrowserOnAndroid.Test1 -->
+      </class> <!-- appium.appiumpractice.hybridAppAndroid.Test1 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
